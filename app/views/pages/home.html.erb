@@ -1,0 +1,12 @@
+<h1 style="color: #ffffff">Bienvenue sur The Gossip Project</h1>
+
+
+
+<div id="container" style="color: #ffffff">
+<% @gossip.each do |gossip|%>
+
+<p><%= gossip.title%><br>
+Ragoté par <%=gossip.user.first_name%></p>
+<br>
+<%end%>
+</div>
